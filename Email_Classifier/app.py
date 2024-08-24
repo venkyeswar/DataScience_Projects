@@ -12,8 +12,8 @@ nltk.download("punkt")
 nltk.download("stopwords")
 nltk.download("punkt_tab")
 nltk.download('wordnet')
-model = joblib.load("./Email_Classifier/model.pkl")
-vectorizer = joblib.load("./Email_Classifier/vectorizer.pkl")
+model = joblib.load("model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
 
 
 
