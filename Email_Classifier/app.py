@@ -16,7 +16,12 @@ model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
 
-
+st.markdown(
+    """
+    [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/venkyeswar/DataScience_Projects/blob/main/Email_Classifier/)
+    """,
+    unsafe_allow_html=True
+)
 stop_words = stopwords.words("english")
 
  
