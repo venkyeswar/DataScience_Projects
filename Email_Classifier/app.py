@@ -11,8 +11,8 @@ lemmatizer = WordNetLemmatizer()
 nltk.download("punkt")
 nltk.download("stopwords")
 nltk.download("punkt_tab")
-model = joblib.load("model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+model = joblib.load("./Email_Classifier/model.pkl")
+vectorizer = joblib.load("./Email_Classifier/vectorizer.pkl")
 
 stop_words = stopwords.words("english")
 
