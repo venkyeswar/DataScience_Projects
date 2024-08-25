@@ -25,7 +25,7 @@ If you want to run the project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone  https://github.com/venkyeswar/DataScience_Projects/tree/main/Email_Classifier
+   git clone  https://github.com/venkyeswar/DataScience_Projects.git
    ```
 
 2. **Navigate to the project directory**:
