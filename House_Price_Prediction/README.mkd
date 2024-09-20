@@ -1,0 +1,79 @@
+# House Price Prediction
+
+This project predicts house prices based on various features like the number of bedrooms, bathrooms, living area, waterfront presence, views, grade of the house, basement area, build year, latitude, and longitude. The project uses several machine learning models, with XGBoost being selected for its superior performance.
+
+## Features
+- **Model Methods Used:**
+  - Linear Regression
+  - Random Forest
+  - Decision Tree
+  - XGBoost (final model selected)
+
+- **Input Features:**
+  - Number of Bedrooms
+  - Number of Bathrooms
+  - Living Area (sqft)
+  - Waterfront Presence
+  - Number of Views
+  - Grade of the House
+  - Area of the House (excluding Basement)
+  - Area of the Basement
+  - Build Year
+  - Latitude
+  - Longitude
+
+## Model Selection
+Four different machine learning models were compared, and **XGBoost** was selected for its better performance in predicting house prices.
+
+## Data Preprocessing
+The input features are scaled using a pre-fitted scaler (`scaler.pkl`) to normalize the data, which helps improve the accuracy of the model.
+
+## Deployment
+The project has been deployed on **Render**, and the application can be accessed at the following link:
+[House Price Prediction App](https://house-price-prediction-z6gf.onrender.com/)
+
+## Getting Predictions
+1. Enter the required house features.
+2. Click the "Predict" button.
+3. The predicted price will be displayed in **Indian Rupees** and in words.
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/house-price-prediction.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd house-price-prediction
+    ```
+
+3. Create a virtual environment and activate it:
+    ```bash
+    python -m venv env
+    source env/bin/activate  # On Windows: env\Scripts\activate
+    ```
+
+4. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Run the Streamlit app:
+    ```bash
+    streamlit run app.py
+    ```
+
+6. The app will be running locally at `http://localhost:8501/`.
+
+## Technologies Used
+- **Backend**: Python
+- **Frontend**: Streamlit for UI
+- **Models**: XGBoost, RandomForest, DecisionTree, Linear Regression
+- **Deployment**: Render
+
+## Conclusion
+The **XGBoost** model was chosen for its high accuracy. This app allows users to easily predict house prices with user-friendly inputs.
