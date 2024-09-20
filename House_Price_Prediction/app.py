@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from num2words import num2words
 
 # Load the scaler and model
 model = joblib.load("model.pkl")
@@ -55,8 +56,21 @@ if st.button("Predict House Price"):
         'Longitude': longitude
     }
     
-    # Get the prediction
-    price = predict_price(inputs)
+    # Get the predicted price in USD
+    price_usd = predict_price(inputs)
     
-    # Display the prediction
-    st.success(f"Predicted House Price: ${price:,.2f}")
+    # Convert USD to INR (assuming 1 USD = 83 INR)
+    price_inr = price_usd * 83
+
+    
+    # Convert the price to word format (without currency option)
+    price_in_whole_words = num2words(int(price_inr), lang='en_IN') + ' Rupees'
+    
+    # If there are decimals, convert them to Paise
+    price_decimal = round(price_inr % 1 * 100)  # Convert fraction part to Paise
+    if price_decimal > 0:
+        price_in_whole_words += f" and {num2words(price_decimal)} Paise"
+
+    # Display the prediction in INR and words
+    st.success(f"Predicted House Price: ₹{price_inr:,.2f}")
+    st.info(f"In words: {price_in_whole_words.capitalize()}")
