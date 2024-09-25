@@ -20,7 +20,7 @@ Jinja2==3.1.4
 joblib==1.4.2
 keras==2.10.0   # Downgraded to work with TensorFlow 2.10
 kiwisolver==1.4.7
-libclang==15.0.0  # Compatibility with earlier TensorFlow versions
+libclang==14.0.6  # Updated to a stable version
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
