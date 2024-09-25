@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Class Prediction</title>
+    <link rel="stylesheet" href="{{url_for("static",filename="index.css")}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Iris Flower Class Prediction</h1>
+        <p>Enter the measurements of the iris flower to predict its class.</p>
+        <form action="/predict" method="POST" id="iris-form">
+            <label for="sepal_length">Sepal Length (cm):</label>
+            <input type="number" id="sepal_length" name="sepal_length" step="0.01" required>
+
+            <label for="sepal_width">Sepal Width (cm):</label>
+            <input type="number" id="sepal_width" name="sepal_width" step="0.01" required>
+
+            <label for="petal_length">Petal Length (cm):</label>
+            <input type="number" id="petal_length" name="petal_length" step="0.01" required>
+
+            <label for="petal_width">Petal Width (cm):</label>
+            <input type="number" id="petal_width" name="petal_width" step="0.01" required>
+
+            <button type="submit">Predict Class</button>
+        </form>
+</body>
+</html>

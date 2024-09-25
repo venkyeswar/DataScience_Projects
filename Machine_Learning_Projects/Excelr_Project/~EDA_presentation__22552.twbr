@@ -1,0 +1,1525 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='EDA_presentation' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Target Class&quot;'>
+        <calculation class='tableau' formula='&quot;Target Class&quot;' />
+        <members>
+          <member value='&quot;Competitiveness&quot;' />
+          <member value='&quot;Credibility&quot;' />
+          <member value='&quot;Financial Flexibility&quot;' />
+          <member value='&quot;Industrial Risk&quot;' />
+          <member value='&quot;Management Risk&quot;' />
+          <member value='&quot;Operating Risk&quot;' />
+          <member value='&quot;Target Class&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (cleaned_data)' inline='true' name='federated.02h143g1ufrhac14dm6c30qishxx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_data' name='excel-direct.1sg12y21f9nuf112pvfib17hyorg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/GIT_FILES/DataScience_Projects/Excelr_Project/cleaned_data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+            <column datatype='real' name='industrial_risk' ordinal='0' />
+            <column datatype='real' name='management_risk' ordinal='1' />
+            <column datatype='real' name='financial_flexibility' ordinal='2' />
+            <column datatype='real' name='credibility' ordinal='3' />
+            <column datatype='real' name='competitiveness' ordinal='4' />
+            <column datatype='real' name='operating_risk' ordinal='5' />
+            <column datatype='string' name='class' ordinal='6' />
+            <column datatype='integer' name='Target_Class' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+            <column datatype='real' name='industrial_risk' ordinal='0' />
+            <column datatype='real' name='management_risk' ordinal='1' />
+            <column datatype='real' name='financial_flexibility' ordinal='2' />
+            <column datatype='real' name='credibility' ordinal='3' />
+            <column datatype='real' name='competitiveness' ordinal='4' />
+            <column datatype='real' name='operating_risk' ordinal='5' />
+            <column datatype='string' name='class' ordinal='6' />
+            <column datatype='integer' name='Target_Class' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H104:no:A1:H104:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industrial_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[industrial_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>industrial_risk</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>management_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[management_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>management_risk</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>financial_flexibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[financial_flexibility]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>financial_flexibility</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>credibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[credibility]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>credibility</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competitiveness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[competitiveness]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>competitiveness</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operating_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[operating_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>operating_risk</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_Class]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Target_Class</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='count_credibility' datatype='integer' name='[Calculation_402790755756032001]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([credibility])' />
+      </column>
+      <column caption='zero' datatype='integer' name='[Calculation_402790755757109250]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='count_target' datatype='integer' name='[Calculation_402790755757826051]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Target_Class])' />
+      </column>
+      <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+      </column>
+      <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_CBFF875597FB43B08D7221F3A723FC13]' role='measure' type='quantitative' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_402790755756032001]' derivation='User' name='[usr:Calculation_402790755756032001:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_402790755757826051]' derivation='User' name='[usr:Calculation_402790755757826051:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (features,labels_features)' hidden='true' name='[Action (features,labels_features)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_402790755778654215]' />
+          <groupfilter function='level-members' level='[Calculation_402790755789037578]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/venky/AppData/Local/Temp/TableauTemp/#TableauTemp_0t8sbt713bsln411s4tlo0erm82v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>industrial_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[industrial_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>industrial_risk</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>management_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[management_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>management_risk</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>financial_flexibility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[financial_flexibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>financial_flexibility</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>credibility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[credibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>credibility</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competitiveness</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[competitiveness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competitiveness</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>operating_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[operating_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>operating_risk</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target_Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Target_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target_Class</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:class:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;bankruptcy&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;non-bankruptcy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755756032001:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_402790755778654215:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0.0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.5</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Target Class&quot;'>
+          <calculation class='tableau' formula='&quot;Target Class&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_CBFF875597FB43B08D7221F3A723FC13'>
+            <properties context=''>
+              <relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+                  <column datatype='real' name='industrial_risk' ordinal='0' />
+                  <column datatype='real' name='management_risk' ordinal='1' />
+                  <column datatype='real' name='financial_flexibility' ordinal='2' />
+                  <column datatype='real' name='credibility' ordinal='3' />
+                  <column datatype='real' name='competitiveness' ordinal='4' />
+                  <column datatype='real' name='operating_risk' ordinal='5' />
+                  <column datatype='string' name='class' ordinal='6' />
+                  <column datatype='integer' name='Target_Class' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='description (description)' inline='true' name='federated.19syf2q1e2cl7h11zh2mt1e3uqaq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='description' name='excel-direct.02bbr4x1lzcasi17dwoih1keetxn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/GIT_FILES/DataScience_Projects/Excelr_Project/description.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+          <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='string' name='Values' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+          <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='string' name='Values' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Feature</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Feature]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Feature</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Values</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Values]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[description]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C8:no:A1:C8:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='empty_column' datatype='string' name='[Calculation_402790755840962576]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;&quot;' />
+      </column>
+      <column aggregation='CountD' datatype='string' name='[Description]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Feature]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Values]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='description' datatype='table' name='[__tableau_internal_object_id__].[description_75A7F1E1517846968373CBE530A75F09]' role='measure' type='quantitative' />
+      <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Feature]' derivation='None' name='[none:Feature:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Values]' derivation='None' name='[none:Values:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Description,Feature,Values)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Description:nk]' />
+          <groupfilter function='level-members' level='[none:Feature:nk]' />
+          <groupfilter function='level-members' level='[none:Values:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/venky/AppData/Local/Temp/TableauTemp/#TableauTemp_1ekodxl0b2tgt61dug05s0nss3vw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Feature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Feature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Feature</remote-alias>
+              <ordinal>0</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>1</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Values</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='description' id='description_75A7F1E1517846968373CBE530A75F09'>
+            <properties context=''>
+              <relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+                <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Feature' ordinal='0' />
+                  <column datatype='string' name='Description' ordinal='1' />
+                  <column datatype='string' name='Values' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_87423C73F5534A4294B089C15257D7A0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Visualization' type='sheet' worksheet='univarient_analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Visualization' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='description (description)' name='federated.19syf2q1e2cl7h11zh2mt1e3uqaq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19syf2q1e2cl7h11zh2mt1e3uqaq'>
+            <column aggregation='CountD' datatype='string' name='[Description]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Feature]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' name='[Values]' role='dimension' type='nominal' />
+            <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feature]' derivation='None' name='[none:Feature:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Values]' derivation='None' name='[none:Values:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='253' />
+            <format attr='height' field='[federated.19syf2q1e2cl7h11zh2mt1e3uqaq].[none:Description:nk]' value='133' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='64' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='width' field='[federated.19syf2q1e2cl7h11zh2mt1e3uqaq].[none:Description:nk]' value='151' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='14' />
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#ddebf0' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='2' />
+            <format attr='stroke-color' scope='cols' value='#333333' />
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='cols' value='#1b1b1b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19syf2q1e2cl7h11zh2mt1e3uqaq].[none:Values:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.19syf2q1e2cl7h11zh2mt1e3uqaq].[none:Feature:nk] / [federated.19syf2q1e2cl7h11zh2mt1e3uqaq].[none:Description:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7309910F-C6A1-4FC6-9482-6D6A63C50186}' />
+    </worksheet>
+    <worksheet name='bivarient_analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Tableau Bold' fontsize='20'>Target_Class</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='20'> Vs </run>
+            <run bold='true' fontalignment='1' fontcolor='#b07aa1' fontname='Tableau Bold' fontsize='20'>&lt;[Parameters].[Parameter 1]&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (cleaned_data)' name='federated.02h143g1ufrhac14dm6c30qishxx' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Target Class&quot;'>
+              <calculation class='tableau' formula='&quot;Target Class&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.02h143g1ufrhac14dm6c30qishxx'>
+            <column caption='zero' datatype='integer' name='[Calculation_402790755757109250]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='count_target' datatype='integer' name='[Calculation_402790755757826051]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Target_Class])' />
+            </column>
+            <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+            </column>
+            <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_402790755789037578]' derivation='None' name='[none:Calculation_402790755789037578:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target_Class]' derivation='None' name='[none:Target_Class:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755757109250]' derivation='Sum' name='[sum:Calculation_402790755757109250:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_402790755757826051]' derivation='User' name='[usr:Calculation_402790755757826051:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_402790755778142214]' derivation='User' name='[usr:Calculation_402790755778142214:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02h143g1ufrhac14dm6c30qishxx].[Action (features,labels_features)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_87423C73F5534A4294B089C15257D7A0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_402790755778654215]' />
+              <groupfilter function='level-members' level='[Calculation_402790755789037578]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02h143g1ufrhac14dm6c30qishxx].[Action (features,labels_features)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Target_Class:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755778654215:ok]' />
+              <wedge-size column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='4.0076613426208496' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='11'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.2430939674377441' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk] + [federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk])</rows>
+        <cols>[federated.02h143g1ufrhac14dm6c30qishxx].[none:Target_Class:ok]</cols>
+      </table>
+      <simple-id uuid='{C50DF6EA-13E5-4CF4-81D0-BDD966F9C65C}' />
+    </worksheet>
+    <worksheet name='univarient_analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>[Parameters].[Parameter 1]</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (cleaned_data)' name='federated.02h143g1ufrhac14dm6c30qishxx' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Target Class&quot;'>
+              <calculation class='tableau' formula='&quot;Target Class&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.02h143g1ufrhac14dm6c30qishxx'>
+            <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+            </column>
+            <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_402790755789037578]' derivation='None' name='[none:Calculation_402790755789037578:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778142214]' derivation='User' name='[usr:Calculation_402790755778142214:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+              <color column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755778654215:ok]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{13996FCB-48AB-433B-97DC-AE96A004D8E8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Data Description'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_10' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone forceUpdate='true' h='6228' id='3' type-v2='text' w='19674' x='3983' y='4348'>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='24'>Data Description</run>
+          </formatted-text>
+        </zone>
+        <zone h='86839' id='8' name='Sheet 5' show-title='false' w='33313' x='56970' y='4113' />
+        <zone forceUpdate='true' h='3995' id='9' type-v2='text' w='6035' x='78214' y='6463'>
+          <formatted-text>
+            <run bold='true' fontcolor='#4e79a7' fontsize='15'>values</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='12456' id='10' type-v2='text' w='43512' x='6397' y='13514'>
+          <formatted-text>
+            <run fontcolor='#000000dd' fontname='Arial' fontsize='14'>The dataset contains 7 features for around 250 companies,</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000dd' fontname='Arial' fontsize='14'> each representing different business risks and flexibility.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='5993' id='11' type-v2='text' w='21907' x='3681' y='30200'>
+          <formatted-text>
+            <run bold='true' fontcolor='#555555' fontname='Tableau Bold' fontsize='24'>Business Objective</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='35840' id='12' type-v2='text' w='41943' x='6276' y='40071'>
+          <formatted-text>
+            <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'>This project aims to classify whether a business is likely to go</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> bankrupt or not based on various risk factors. The target</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> variable is binary, indicating either bankruptcy or non-bankruptcy. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'>The goal is to model the probability of a business going</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> bankrupt using the given features.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='13' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone forceUpdate='true' h='6242' id='3' type-v2='text' w='19674' x='1871' y='2247'>
+                  <formatted-text>
+                    <run fontname='Tableau Bold' fontsize='24'>Data Description</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86891' id='8' is-fixed='true' name='Sheet 5' show-title='false' w='33313' x='47978' y='11610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3995' id='9' type-v2='text' w='6035' x='65419' y='12360'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#4e79a7' fontsize='15'>values</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='12484' id='10' type-v2='text' w='43512' x='2716' y='13358'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontname='Arial' fontsize='14'>The dataset contains 7 features for around 250 companies,</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontname='Arial' fontsize='14'> each representing different business risks and flexibility.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5993' id='11' type-v2='text' w='21907' x='2052' y='27840'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#555555' fontname='Tableau Bold' fontsize='24'>Business Objective</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='35830' id='12' type-v2='text' w='41943' x='2535' y='35456'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'>This project aims to classify whether a business is likely to go</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> bankrupt or not based on various risk factors. The target</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> variable is binary, indicating either bankruptcy or non-bankruptcy. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'>The goal is to model the probability of a business going</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontname='system-ui' fontsize='14'> bankrupt using the given features.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{289B2859-51D8-4FAF-BA1D-C224A04BF98A}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Visualization'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Target Class&quot;'>
+          <calculation class='tableau' formula='&quot;Target Class&quot;' />
+          <members>
+            <member value='&quot;Competitiveness&quot;' />
+            <member value='&quot;Credibility&quot;' />
+            <member value='&quot;Financial Flexibility&quot;' />
+            <member value='&quot;Industrial Risk&quot;' />
+            <member value='&quot;Management Risk&quot;' />
+            <member value='&quot;Operating Risk&quot;' />
+            <member value='&quot;Target Class&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90725' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='8335'>
+            <zone h='90725' id='5' type-v2='layout-basic' w='97103' x='483' y='8335'>
+              <zone h='90725' id='3' name='univarient_analysis' w='41486' x='483' y='8335'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90725' id='9' name='bivarient_analysis' w='45710' x='51876' y='8335'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90725' id='10' type-v2='empty' w='9907' x='41969' y='8335'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='32' h='90725' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='1931' x='97586' y='8335' />
+          </zone>
+          <zone forceUpdate='true' h='7395' id='11' type-v2='text' w='99034' x='483' y='940'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#d37295' fontname='Tableau Bold' fontsize='22'>VISUALIZATION    </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='210' h='24912' id='8' is-fixed='true' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9631' x='42156' y='32550'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='14' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone forceUpdate='true' h='7389' id='11' type-v2='text' w='99034' x='483' y='999'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#d37295' fontname='Tableau Bold' fontsize='22'>VISUALIZATION    </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90613' id='3' is-fixed='true' name='univarient_analysis' w='41488' x='483' y='8388'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90613' id='9' is-fixed='true' name='bivarient_analysis' w='45708' x='51878' y='8388'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='210' h='24912' id='8' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9631' x='42156' y='32550'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{21612826-FD6E-4CCC-8D8D-3977ED57D67F}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='table_of_contents'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone forceUpdate='true' h='11868' id='3' type-v2='text' w='35918' x='29376' y='7051'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='28'>Table of Contents</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='43831' id='4' type-v2='text' w='31193' x='15506' y='28202'>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Calibri' fontsize='28'>1. Data Description</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#333333' fontname='Calibri' fontsize='28'>2. Data Preprocessing</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#333333' fontname='Calibri' fontsize='28'>3. Descriptive Analysis</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#333333' fontname='Calibri' fontsize='28'>4. Visualization</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#333333' fontname='Calibri' fontsize='28'>5. Feature Selection</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='7' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone forceUpdate='true' h='11868' id='3' type-v2='text' w='35918' x='29376' y='7051'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='28'>Table of Contents</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='43831' id='4' type-v2='text' w='31193' x='15506' y='28202'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Calibri' fontsize='28'>1. Data Description</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontname='Calibri' fontsize='28'>2. Data Preprocessing</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontname='Calibri' fontsize='28'>3. Descriptive Analysis</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontname='Calibri' fontsize='28'>4. Visualization</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#333333' fontname='Calibri' fontsize='28'>5. Feature Selection</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{179FD3F2-03A6-417E-8FFC-B0F68B22CCBE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='univarient_analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A6DAEA46-DD08-4804-B927-A5678CAD9843}' />
+    </window>
+    <window class='worksheet' name='bivarient_analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{45C08143-A855-43BF-A560-CEC569C4B2E0}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{B42C2070-A3C6-402F-B6AE-8E30CDCE1AC7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='table_of_contents'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{22D43531-AB68-463F-A1C2-DFB019D5C7E8}' />
+    </window>
+    <window class='dashboard' name='Data Description'>
+      <viewpoints>
+        <viewpoint name='Sheet 5'>
+          <zoom type='fit-height' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2BA851AE-C29F-4141-9932-4C985ECF2C93}' />
+    </window>
+    <window class='dashboard' name='Visualization'>
+      <viewpoints>
+        <viewpoint name='bivarient_analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='univarient_analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{C98D743F-138F-4C79-A6BD-817E4AFCF2E3}' />
+    </window>
+  </windows>
+</workbook>

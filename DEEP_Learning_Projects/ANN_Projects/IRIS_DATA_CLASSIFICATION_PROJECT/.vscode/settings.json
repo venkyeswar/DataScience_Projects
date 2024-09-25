@@ -1,0 +1,14 @@
+{
+    "python.languageServer":"Pylance",
+    "python.pythonPath": "C:\\Users\\venky\\anaconda3\\python.exe",
+    
+    "emmet.includeLanguages": {
+            "django-html": "html"
+        },
+    // "files.autoSave": "afterDelay",
+     "editor.tabSize": 4,
+        
+    
+    
+    
+}

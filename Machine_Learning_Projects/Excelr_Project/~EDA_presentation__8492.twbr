@@ -1,0 +1,2117 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='EDA_presentation' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Operating Risk&quot;'>
+        <calculation class='tableau' formula='&quot;Operating Risk&quot;' />
+        <members>
+          <member value='&quot;Target Class&quot;' />
+          <member value='&quot;Competitiveness&quot;' />
+          <member value='&quot;Credibility&quot;' />
+          <member value='&quot;Financial Flexibility&quot;' />
+          <member value='&quot;Industrial Risk&quot;' />
+          <member value='&quot;Management Risk&quot;' />
+          <member value='&quot;Operating Risk&quot;' />
+        </members>
+      </column>
+      <column caption='Current Sheet' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;sheet_1&quot;'>
+        <calculation class='tableau' formula='&quot;sheet_1&quot;' />
+        <members>
+          <member value='&quot;sheet_1&quot;' />
+          <member value='&quot;sheet_2&quot;' />
+          <member value='&quot;sheet_3&quot;' />
+          <member value='&quot;sheet_4&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (cleaned_data)' inline='true' name='federated.02h143g1ufrhac14dm6c30qishxx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_data' name='excel-direct.1sg12y21f9nuf112pvfib17hyorg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/GIT_FILES/DataScience_Projects/Excelr_Project/cleaned_data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+            <column datatype='real' name='industrial_risk' ordinal='0' />
+            <column datatype='real' name='management_risk' ordinal='1' />
+            <column datatype='real' name='financial_flexibility' ordinal='2' />
+            <column datatype='real' name='credibility' ordinal='3' />
+            <column datatype='real' name='competitiveness' ordinal='4' />
+            <column datatype='real' name='operating_risk' ordinal='5' />
+            <column datatype='string' name='class' ordinal='6' />
+            <column datatype='integer' name='Target_Class' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+            <column datatype='real' name='industrial_risk' ordinal='0' />
+            <column datatype='real' name='management_risk' ordinal='1' />
+            <column datatype='real' name='financial_flexibility' ordinal='2' />
+            <column datatype='real' name='credibility' ordinal='3' />
+            <column datatype='real' name='competitiveness' ordinal='4' />
+            <column datatype='real' name='operating_risk' ordinal='5' />
+            <column datatype='string' name='class' ordinal='6' />
+            <column datatype='integer' name='Target_Class' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H104:no:A1:H104:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industrial_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[industrial_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>industrial_risk</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>management_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[management_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>management_risk</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>financial_flexibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[financial_flexibility]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>financial_flexibility</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>credibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[credibility]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>credibility</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>competitiveness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[competitiveness]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>competitiveness</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operating_risk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[operating_risk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>operating_risk</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[class]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>class</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target_Class</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target_Class]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Target_Class</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBFF875597FB43B08D7221F3A723FC13]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Return Button' datatype='string' name='[Calculation_1266918934892912640]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 2] = &quot;sheet_1&quot; THEN &quot;Return to slide_1&quot;&#13;&#10;ELSEIF [Parameters].[Parameter 2] = &quot;Sheet 2&quot; THEN &quot;Return to slide_2&quot;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='count_credibility' datatype='integer' name='[Calculation_402790755756032001]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([credibility])' />
+      </column>
+      <column caption='zero' datatype='integer' name='[Calculation_402790755757109250]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='count_target' datatype='integer' name='[Calculation_402790755757826051]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Target_Class])' />
+      </column>
+      <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+      </column>
+      <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_CBFF875597FB43B08D7221F3A723FC13]' role='measure' type='quantitative' />
+      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_402790755756032001]' derivation='User' name='[usr:Calculation_402790755756032001:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_402790755757826051]' derivation='User' name='[usr:Calculation_402790755757826051:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (features,labels_features)' hidden='true' name='[Action (features,labels_features)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_402790755778654215]' />
+          <groupfilter function='level-members' level='[Calculation_402790755789037578]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/venky/AppData/Local/Temp/TableauTemp/#TableauTemp_0t8sbt713bsln411s4tlo0erm82v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>industrial_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[industrial_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>industrial_risk</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>management_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[management_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>management_risk</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>financial_flexibility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[financial_flexibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>financial_flexibility</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>credibility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[credibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>credibility</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>competitiveness</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[competitiveness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>competitiveness</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>operating_risk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[operating_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>operating_risk</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>class</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target_Class</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Target_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target_Class</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:class:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;bankruptcy&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;non-bankruptcy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755756032001:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_402790755778654215:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0.0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.5</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Operating Risk&quot;'>
+          <calculation class='tableau' formula='&quot;Operating Risk&quot;' />
+        </column>
+        <column caption='Current Sheet' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;sheet_1&quot;'>
+          <calculation class='tableau' formula='&quot;sheet_1&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_CBFF875597FB43B08D7221F3A723FC13'>
+            <properties context=''>
+              <relation connection='excel-direct.1sg12y21f9nuf112pvfib17hyorg' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:H104:no:A1:H104:0' header='yes' outcome='6'>
+                  <column datatype='real' name='industrial_risk' ordinal='0' />
+                  <column datatype='real' name='management_risk' ordinal='1' />
+                  <column datatype='real' name='financial_flexibility' ordinal='2' />
+                  <column datatype='real' name='credibility' ordinal='3' />
+                  <column datatype='real' name='competitiveness' ordinal='4' />
+                  <column datatype='real' name='operating_risk' ordinal='5' />
+                  <column datatype='string' name='class' ordinal='6' />
+                  <column datatype='integer' name='Target_Class' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='description (description)' inline='true' name='federated.19syf2q1e2cl7h11zh2mt1e3uqaq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='description' name='excel-direct.02bbr4x1lzcasi17dwoih1keetxn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/GIT_FILES/DataScience_Projects/Excelr_Project/description.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+          <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='string' name='Values' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+          <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='string' name='Description' ordinal='1' />
+            <column datatype='string' name='Values' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Feature</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Feature]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Feature</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Values</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Values]</local-name>
+            <parent-name>[description]</parent-name>
+            <remote-alias>Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[description]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C8:no:A1:C8:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='empty_column' datatype='string' name='[Calculation_402790755840962576]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;&quot;' />
+      </column>
+      <column aggregation='CountD' datatype='string' name='[Description]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Feature]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Values]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='description' datatype='table' name='[__tableau_internal_object_id__].[description_75A7F1E1517846968373CBE530A75F09]' role='measure' type='quantitative' />
+      <column-instance column='[Description]' derivation='None' name='[none:Description:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Feature]' derivation='None' name='[none:Feature:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Values]' derivation='None' name='[none:Values:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Description,Feature,Values)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Description:nk]' />
+          <groupfilter function='level-members' level='[none:Feature:nk]' />
+          <groupfilter function='level-members' level='[none:Values:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/venky/AppData/Local/Temp/TableauTemp/#TableauTemp_1ekodxl0b2tgt61dug05s0nss3vw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Feature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Feature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Feature</remote-alias>
+              <ordinal>0</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>1</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Values</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>description</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='description' id='description_75A7F1E1517846968373CBE530A75F09'>
+            <properties context=''>
+              <relation connection='excel-direct.02bbr4x1lzcasi17dwoih1keetxn' name='description' table='[description$]' type='table'>
+                <columns gridOrigin='A1:C8:no:A1:C8:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Feature' ordinal='0' />
+                  <column datatype='string' name='Description' ordinal='1' />
+                  <column datatype='string' name='Values' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_87423C73F5534A4294B089C15257D7A0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Visualization' type='sheet' worksheet='univarient_analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Visualization' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='bivarient_analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Tableau Bold' fontsize='20'>Target_Class</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='20'> Vs </run>
+            <run bold='true' fontalignment='1' fontcolor='#b07aa1' fontname='Tableau Bold' fontsize='20'>&lt;[Parameters].[Parameter 1]&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (cleaned_data)' name='federated.02h143g1ufrhac14dm6c30qishxx' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Operating Risk&quot;'>
+              <calculation class='tableau' formula='&quot;Operating Risk&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.02h143g1ufrhac14dm6c30qishxx'>
+            <column caption='zero' datatype='integer' name='[Calculation_402790755757109250]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='count_target' datatype='integer' name='[Calculation_402790755757826051]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Target_Class])' />
+            </column>
+            <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+            </column>
+            <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_402790755789037578]' derivation='None' name='[none:Calculation_402790755789037578:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target_Class]' derivation='None' name='[none:Target_Class:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[class]' derivation='None' name='[none:class:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755757109250]' derivation='Sum' name='[sum:Calculation_402790755757109250:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_402790755757826051]' derivation='User' name='[usr:Calculation_402790755757826051:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_402790755778142214]' derivation='User' name='[usr:Calculation_402790755778142214:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02h143g1ufrhac14dm6c30qishxx].[Action (features,labels_features)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_87423C73F5534A4294B089C15257D7A0]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_402790755778654215]' />
+              <groupfilter function='level-members' level='[Calculation_402790755789037578]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02h143g1ufrhac14dm6c30qishxx].[Action (features,labels_features)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Target_Class:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[Parameters].[Parameter 1]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755778654215:ok]' />
+              <wedge-size column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+              <lod column='[Parameters].[Parameter 1]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='4.0076613426208496' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]' />
+              <lod column='[Parameters].[Parameter 1]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Regular' fontsize='11'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:class:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='10'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755757826051:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.2430939674377441' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk] + [federated.02h143g1ufrhac14dm6c30qishxx].[sum:Calculation_402790755757109250:qk])</rows>
+        <cols>[federated.02h143g1ufrhac14dm6c30qishxx].[none:Target_Class:ok]</cols>
+      </table>
+      <simple-id uuid='{C50DF6EA-13E5-4CF4-81D0-BDD966F9C65C}' />
+    </worksheet>
+    <worksheet name='univarient_analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>&lt;</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>[Parameters].[Parameter 1]</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Bold' fontsize='22'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (cleaned_data)' name='federated.02h143g1ufrhac14dm6c30qishxx' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Operating Risk&quot;'>
+              <calculation class='tableau' formula='&quot;Operating Risk&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.02h143g1ufrhac14dm6c30qishxx'>
+            <column caption='label_credibility' datatype='string' name='[Calculation_402790755775799301]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [credibility]=0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [credibility]=0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='count_features' datatype='integer' name='[Calculation_402790755778142214]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Competitiveness&quot; THEN COUNT([competitiveness])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN COUNT([credibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN COUNT([financial_flexibility])&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Industrial Risk&quot; THEN COUNT([industrial_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN COUNT([management_risk])&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN COUNT([operating_risk])&#13;&#10;ELSE COUNT([Target_Class])&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='features' datatype='real' name='[Calculation_402790755778654215]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [competitiveness]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Credibility&quot; THEN [credibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Financial Flexibility&quot; THEN [financial_flexibility]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [industrial_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [management_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]  = &quot;Operating Risk&quot; THEN [operating_risk]&#13;&#10;ELSEIF [Parameters].[Parameter 1]= &quot;Target Class&quot; THEN [Target_Class]&#13;&#10;END' />
+            </column>
+            <column caption='label_competitiveness' datatype='string' name='[Calculation_402790755788353545]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [competitiveness] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [competitiveness] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='labels_features' datatype='string' name='[Calculation_402790755789037578]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1] = &quot;Competitiveness&quot; THEN [Calculation_402790755788353545]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Target Class&quot; THEN [class]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Credibility&quot; THEN [Calculation_402790755775799301]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Financial Flexibility&quot; THEN [Calculation_402790755802980364]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Industrial Risk&quot; THEN [Calculation_402790755803193357]&#13;&#10;ELSEIF [Parameters].[Parameter 1] = &quot;Management Risk&quot; THEN [Calculation_402790755803451406]&#13;&#10;ELSEIF  [Parameters].[Parameter 1] = &quot;Operating Risk&quot; THEN [Calculation_402790755803648015]&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='label_financial_flexibility' datatype='string' name='[Calculation_402790755802980364]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [financial_flexibility] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF [financial_flexibility] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_industrial_risk' datatype='string' name='[Calculation_402790755803193357]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [industrial_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [industrial_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_managenemt_risk' datatype='string' name='[Calculation_402790755803451406]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [management_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [management_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column caption='label_operating_risk' datatype='string' name='[Calculation_402790755803648015]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [operating_risk] = 0 THEN &quot;LOW&quot;&#13;&#10;ELSEIF  [operating_risk] = 0.5 THEN &quot;MEDIUM&quot;&#13;&#10;ELSE &quot;HIGH&quot;&#13;&#10;END' />
+            </column>
+            <column aggregation='Sum' caption='Target Class' datatype='integer' name='[Target_Class]' role='dimension' type='ordinal' />
+            <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Competitiveness' datatype='real' name='[competitiveness]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Credibility' datatype='real' name='[credibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Financial Flexibility' datatype='real' name='[financial_flexibility]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Industrial Risk' datatype='real' name='[industrial_risk]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Management Risk' datatype='real' name='[management_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778654215]' derivation='None' name='[none:Calculation_402790755778654215:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_402790755789037578]' derivation='None' name='[none:Calculation_402790755789037578:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Operating Risk' datatype='real' name='[operating_risk]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_402790755778142214]' derivation='User' name='[usr:Calculation_402790755778142214:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+              <color column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755778654215:ok]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]' />
+              <text column='[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[none:Calculation_402790755789037578:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='16'><![CDATA[<[federated.02h143g1ufrhac14dm6c30qishxx].[usr:Calculation_402790755778142214:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{13996FCB-48AB-433B-97DC-AE96A004D8E8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Visualization'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Feature' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Operating Risk&quot;'>
+          <calculation class='tableau' formula='&quot;Operating Risk&quot;' />
+          <members>
+            <member value='&quot;Target Class&quot;' />
+            <member value='&quot;Competitiveness&quot;' />
+            <member value='&quot;Credibility&quot;' />
+            <member value='&quot;Financial Flexibility&quot;' />
+            <member value='&quot;Industrial Risk&quot;' />
+            <member value='&quot;Management Risk&quot;' />
+            <member value='&quot;Operating Risk&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90976' id='7' param='horz' type-v2='layout-flow' w='99166' x='417' y='8218'>
+            <zone h='90976' id='5' type-v2='layout-basic' w='97499' x='417' y='8218'>
+              <zone h='90976' id='3' name='univarient_analysis' w='41653' x='417' y='8218'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90976' id='9' name='bivarient_analysis' w='45900' x='52016' y='8218'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90976' id='10' type-v2='empty' w='9946' x='42070' y='8218'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='32' h='90976' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='1667' x='97916' y='8218' />
+          </zone>
+          <zone forceUpdate='true' h='7412' id='11' type-v2='text' w='99166' x='417' y='806'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#d37295' fontname='Tableau Bold' fontsize='22'>VISUALIZATION    </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='210' h='24912' id='8' is-fixed='true' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9631' x='42156' y='32550'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='16' type-v2='dashboard-object' w='8389' x='90103' y='940'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='17' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone forceUpdate='true' h='7418' id='11' type-v2='text' w='99166' x='417' y='767'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#d37295' fontname='Tableau Bold' fontsize='22'>VISUALIZATION    </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='16' type-v2='dashboard-object' w='8389' x='90103' y='940'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91048' id='3' is-fixed='true' name='univarient_analysis' w='41653' x='417' y='8185'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91048' id='9' is-fixed='true' name='bivarient_analysis' w='45900' x='52016' y='8185'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='210' h='24912' id='8' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9631' x='42156' y='32550'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{21612826-FD6E-4CCC-8D8D-3977ED57D67F}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='code'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='' h='98388' id='3' param='http://localhost:8888/notebooks/EDA.ipynb' type-v2='web' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8108' id='5' type-v2='dashboard-object' w='10320' x='89378' y='1880'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{7B244522-C7D4-4EDE-B5BA-08E13C7EC05C}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' forceUpdate='' h='98466' id='3' is-fixed='true' param='http://localhost:8888/notebooks/EDA.ipynb' type-v2='web' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8108' id='5' type-v2='dashboard-object' w='10320' x='89378' y='1880'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{7B244522-C7D4-4EDE-B5BA-08E13C7EC05C}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9591F3BD-FEA9-4A79-9851-6C1C00D15553}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_1.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='8' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='10458' id='5' type-v2='dashboard-object' w='15631' x='1871' y='2820'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_1.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10458' id='5' type-v2='dashboard-object' w='15631' x='1871' y='2820'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CD3A1DCD-5369-4CB7-A7E7-BC42549B2622}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_10'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_10.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89258' y='3525'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_10.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89258' y='3525'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C395FDA9-3F38-4AA7-9583-78B5E275C028}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_11'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_11.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89258' y='3760'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_11.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89258' y='3760'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A768D57E-2C82-46A9-A10B-650023ECF3FB}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_2.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89559' y='2585'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_2.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89559' y='2585'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CA60C7AE-C3D4-4C40-A2E6-354E9BF19F35}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_3'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_3.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89499' y='3408'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_3.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89499' y='3408'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{38C5FF3B-5F27-4A35-B2BD-EE7C2B99C0C4}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_4'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_4.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89861' y='1998'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_4.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89861' y='1998'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FCE05F64-8D19-4859-AE26-4C86E3510080}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_5'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_5.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='88835' y='3525'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_5.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='88835' y='3525'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B1476AA6-9A40-48C0-9B40-1477E2184250}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_6'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_6.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89801' y='2585'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='6' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='280' h='98120' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_6.png' type-v2='bitmap' w='99034' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89801' y='2585'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7F41523D-C2C6-4405-BF2F-46B3FCC5899F}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_7'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_7.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89620' y='2703'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_7.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89620' y='2703'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DD5C43C4-47B1-46B8-831E-4AB5D8A89640}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_8'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_8.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89922' y='3173'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_8.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89922' y='3173'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{032C90A8-0F11-4E0C-9797-5DDFDB507047}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='slide_9'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98388' id='3' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_9.png' type-v2='bitmap' w='99166' x='417' y='806'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89740' y='2938'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+            <button-visual-state>
+              <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98466' id='6' param='vert' type-v2='layout-flow' w='99166' x='417' y='767'>
+                <zone fixed-size='280' h='98466' id='3' is-fixed='true' is-scaled='1' param='D:/GIT_FILES/DataScience_Projects/Excelr_Project/eda_slides/slide_9.png' type-v2='bitmap' w='99166' x='417' y='767'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6110' id='5' type-v2='dashboard-object' w='8328' x='89740' y='2938'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}&quot;'>
+                    <button-visual-state>
+                      <image-path>D:/GIT_FILES/DataScience_Projects/Excelr_Project/Picture1.jpg</image-path>
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{46885E64-4573-46EA-810F-3AAA3A9CFBD8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='univarient_analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{A6DAEA46-DD08-4804-B927-A5678CAD9843}' />
+    </window>
+    <window class='worksheet' name='bivarient_analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{45C08143-A855-43BF-A560-CEC569C4B2E0}' />
+    </window>
+    <window class='dashboard' name='code'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{0D155303-9E87-4B7E-8F9B-D2DFF275A6D1}' />
+    </window>
+    <window class='dashboard' name='slide_1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{D42457CE-817C-4775-932A-64E2CE6C1C46}' />
+    </window>
+    <window class='dashboard' name='slide_2'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{9EA61B22-F190-447B-B8BF-AF9B97A3B42C}' />
+    </window>
+    <window class='dashboard' name='slide_3'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{D8EA86CA-906D-437A-8521-881A41064F4C}' />
+    </window>
+    <window class='dashboard' name='slide_4'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{F40A505B-4BDA-4164-AD5D-D48140582C5E}' />
+    </window>
+    <window class='dashboard' name='Visualization'>
+      <viewpoints>
+        <viewpoint name='bivarient_analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='univarient_analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{C98D743F-138F-4C79-A6BD-817E4AFCF2E3}' />
+    </window>
+    <window class='dashboard' name='slide_5'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{7B244522-C7D4-4EDE-B5BA-08E13C7EC05C}' />
+    </window>
+    <window class='dashboard' name='slide_6'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{65AB7336-D661-486B-B998-9B129498335E}' />
+    </window>
+    <window class='dashboard' name='slide_7'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{49FF67E0-7AAA-4931-93B6-536F35351763}' />
+    </window>
+    <window class='dashboard' name='slide_8'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{6509175B-912D-434F-9F48-AEEEA46008A2}' />
+    </window>
+    <window class='dashboard' name='slide_9'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{0EEA7AD8-A906-49EC-A3A7-CF43C2658FCB}' />
+    </window>
+    <window class='dashboard' name='slide_10'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{97868E1F-50A4-45D6-B097-C419D057CB6A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='slide_11'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{AE05751A-3F2A-4609-BD54-005159F619A6}' />
+    </window>
+  </windows>
+</workbook>
