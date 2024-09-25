@@ -3,6 +3,7 @@ app = Flask(__name__)
 from tensorflow.keras.models import load_model
 import numpy as np
 import joblib
+import os
 import pandas as pd
 
 model = load_model("iris_classification_model.h5")
@@ -55,4 +56,4 @@ def predict():
 def prediction():
     return
 if __name__ == "__main__":
-    app.run(debug=True)
+     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
