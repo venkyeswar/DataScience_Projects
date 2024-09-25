@@ -12,15 +12,15 @@ flatbuffers==24.3.25
 fonttools==4.54.1
 gast==0.6.0
 google-pasta==0.2.0
-grpcio==1.66.1
+grpcio==1.54.0
 h5py==3.11.0
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.4
 joblib==1.4.2
-keras==3.5.0
+keras==2.10.0   # Downgraded to work with TensorFlow 2.10
 kiwisolver==1.4.7
-libclang==18.1.1
+libclang==15.0.0  # Compatibility with earlier TensorFlow versions
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
@@ -28,13 +28,13 @@ matplotlib==3.9.2
 mdurl==0.1.2
 ml-dtypes==0.4.1
 namex==0.0.8
-numpy==1.26.4
+numpy==1.23.5   # TensorFlow 2.10 is compatible with numpy versions <1.24
 opt-einsum==3.3.0
 optree==0.12.1
 packaging==24.1
 pandas==2.2.3
 pillow==10.4.0
-protobuf==4.25.5
+protobuf==3.19.6  # Works with TensorFlow 2.10
 Pygments==2.18.0
 pyparsing==3.1.4
 python-dateutil==2.9.0.post0
@@ -42,14 +42,14 @@ pytz==2024.2
 requests==2.32.3
 rich==13.8.1
 scikit-learn==1.5.2
-scipy==1.14.1
+scipy==1.10.1  # Works well with TensorFlow 2.10
 seaborn==0.13.2
 six==1.16.0
-tensorboard==2.17.1
-tensorboard-data-server==0.7.2
-tensorflow==2.17.0
-tensorflow-intel==2.17.0
-tensorflow-io-gcs-filesystem==0.31.0
+tensorboard==2.10.1  # Matched with TensorFlow 2.10
+tensorboard-data-server==0.6.1  # Compatible with TensorFlow 2.10
+tensorflow==2.10.0  # Downgraded for better compatibility across platforms
+tensorflow-cpu==2.10.0  # Added CPU version to avoid issues with GPU dependencies
+tensorflow-io-gcs-filesystem==0.27.0  # Compatible with TensorFlow 2.10
 termcolor==2.4.0
 threadpoolctl==3.5.0
 typing_extensions==4.12.2
