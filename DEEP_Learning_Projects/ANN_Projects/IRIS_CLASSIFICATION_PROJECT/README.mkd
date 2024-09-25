@@ -1,6 +1,3 @@
-### README.md
-
-
 # Iris Classification Using ANN
 
 This project implements an Artificial Neural Network (ANN) to classify the Iris dataset. The model has achieved high accuracy in predicting the species of Iris flowers based on their features.
