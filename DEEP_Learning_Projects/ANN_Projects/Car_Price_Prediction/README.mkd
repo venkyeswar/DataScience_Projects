@@ -1,0 +1,44 @@
+# Car Price Prediction using ANN
+
+## Overview
+
+This project utilizes an **Artificial Neural Network (ANN)** to predict car prices based on features like year, mileage, horsepower, and more. The model has achieved **97% accuracy on the training data** and **98% accuracy on the testing data**. The application is built with **Flask** for the backend and is deployed on **Render** for easy access.
+
+## Live Project
+
+[Car Price Prediction App](https://ann-car-price-prediction.onrender.com/)
+
+## Technologies Used
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML, CSS
+- **Machine Learning**: TensorFlow (ANN)
+- **Deployment**: Render
+
+## Features
+
+- Predict car prices based on input features.
+- User-friendly web interface for easy predictions.
+- High accuracy ANN model.
+
+## How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-link>
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd car-price-prediction
+   ```
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Flask app:
+   ```bash
+   python app.py
+   ```
+
+5. Open `http://127.0.0.1:5000/` in your browser.
+
