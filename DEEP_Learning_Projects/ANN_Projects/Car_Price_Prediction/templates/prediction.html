@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <style>
+        body {
+            background: url("{{ url_for('static', filename='index_image.jpg') }}") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .input-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 20px 0;
+        }
+        .input-list li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Prediction Result</h1>
+        <ul class="input-list">
+            <li><strong>Year:</strong> {{ year }}</li>
+            <li><strong>Car Age:</strong> {{ age }} years</li>
+            <li><strong>Present Price:</strong> ₹{{ present_price }} Lakhs</li>
+            <li><strong>Fuel Type:</strong> {{ fuel_type }}</li>
+            <li><strong>Seller Type:</strong> {{ seller_type }}</li>
+        
+        </ul>
+        <h2>Predicted Selling Price: ₹{{ prediction }} Lakhs</h2>
+        <a href="{{ url_for('index') }}">
+            <button class="btn">New Prediction</button>
+        </a>
+    </div>
+</body>
+</html>
