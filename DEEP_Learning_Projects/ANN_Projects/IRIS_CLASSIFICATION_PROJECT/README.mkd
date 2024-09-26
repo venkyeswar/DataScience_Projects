@@ -29,7 +29,7 @@ This project implements an Artificial Neural Network (ANN) to classify the Iris 
 
 ## Live Application
 
-You can access the live application [here](https://ann-iris-classifier-model.onrender.com/).
+You can access the live application [here](https://ann-iris-classifier.onrender.com/).
 
 ## Setup Instructions
 
