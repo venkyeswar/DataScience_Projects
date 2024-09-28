@@ -1,0 +1,62 @@
+# Product Recommendation System
+
+This  is a **Product Recommendation System** designed to suggest similar products based on a given product name. The system uses two methods for recommendation:
+
+1. **Cosine Similarity**: Based on numerical product features like price, rating, and discount.
+2. **TF-IDF Cosine Similarity**: Based on textual features such as the product name.
+
+## Features
+
+- **Input**: Users can enter a product name.
+- **Output**: The system returns a list of products that are similar to the input product.
+- The recommendations are based on:
+  - **Cosine Similarity** between product attributes.
+  - **TF-IDF Cosine Similarity** for product name comparison.
+
+## Methods
+
+1. **Cosine Similarity**:
+   - This method calculates the similarity between products using their numerical features, such as price, rating, and discount. 
+   - It suggests products that are most similar based on these attributes.
+
+2. **TF-IDF Cosine Similarity**:
+   - This method focuses on textual data (e.g., product names). 
+   - The product names are vectorized using the TF-IDF technique, and cosine similarity is calculated to find the most similar products based on name.
+
+## Workflow
+
+1. **Dataset**:
+   - The system loads a dataset containing product information, including attributes like `name`, `price`, `rating`, and `discount`.
+   
+2. **Similarity Computation**:
+   - For numerical features, cosine similarity is computed between product attributes.
+   - For textual features, TF-IDF is applied to the product names, followed by cosine similarity to find similar products.
+
+3. **Product Recommendations**:
+   - The system provides recommendations based on the input product name by comparing it to other products in the dataset using either method (cosine similarity or TF-IDF).
+
+## How to Use
+
+1. **Clone or Download the Repository**:
+   - Download the project and install the necessary dependencies.
+
+2. **Provide Product Name**:
+   - Input a product name into the system to receive recommendations of similar products.
+
+3. **View Recommendations**:
+   - The system will output a list of similar products, including attributes like name, price, rating, and discount.
+
+## Example
+
+For an input product like `"Men Solid Oversized Cotton"`, the system will suggest similar products with details such as:
+
+- **Product Name**
+- **Price**
+- **Rating**
+- **Discount**
+
+## Future Enhancements
+
+- Incorporating more product features such as brand or category for more accurate recommendations.
+- Optimizing the system to handle large datasets more efficiently.
+- Developing a web interface using technologies like Flask or Streamlit for easier interaction.
